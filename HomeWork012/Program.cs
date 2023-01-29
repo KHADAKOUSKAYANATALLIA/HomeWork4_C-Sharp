@@ -9,13 +9,16 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int result = 0;
 
+if (number < 0)
+{
+    number = number * -1;
+}
+
 while(number > 0)
 {
-    int digit = number % 10; // 452 - остаток 2
-    result = result + digit; // 0 + 2 = 2
-    number = number / 10; // убираем хвост числа
+    int digit = number % 10; 
+    result = result + digit;
+    number = number / 10; 
 }
 
 Console.WriteLine("Сумма цифр в числе равна: " + result);
-
-// Console.Write("Сумма цифр в числе {0} равна {1}", number, result);
