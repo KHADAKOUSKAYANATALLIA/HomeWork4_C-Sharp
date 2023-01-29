@@ -26,12 +26,11 @@ void PrintArray(int[] array) // выводим массив
 
 }
 
-
 Console.WriteLine("Введите размер массива: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int [] array = new int[8]; // создаем новый массив с количеством N-элементов
+int [] array = new int[N]; // создаем новый массив с количеством N-элементов
 FullArray(array);
-Console.Write("Ваш массив: ");
+Console.WriteLine("Ваш массив: ");
 PrintArray(array);
 
 
